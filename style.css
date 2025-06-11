@@ -232,16 +232,6 @@ textarea {
 
 /* media-query */
 
-.scrolling-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.scrolling-links a {
-  margin: 0;
-}
-
 @media (max-width: 700px) {
   /* header */
   .logo {
@@ -286,6 +276,17 @@ textarea {
     object-fit: cover;
     border-radius: 50%;
   }
+
+  .scrolling-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .scrolling-links a {
+    margin: 0;
+  }
+
   /* skilss-section */
 
   #skills {
@@ -320,13 +321,16 @@ textarea {
   .container-contact {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     gap: 30px;
   }
 
   .contact-left h3 {
     display: none;
+  }
+
+  .contact-left p {
+    text-align: center;
   }
 
   .contact-right {
