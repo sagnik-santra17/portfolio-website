@@ -232,7 +232,17 @@ textarea {
 
 /* media-query */
 
-@media (max-width: 600px) {
+.scrolling-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.scrolling-links a {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
   /* header */
   .logo {
     font-size: 15px;
@@ -276,7 +286,6 @@ textarea {
     object-fit: cover;
     border-radius: 50%;
   }
-
   /* skilss-section */
 
   #skills {
