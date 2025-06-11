@@ -132,6 +132,104 @@ nav {
   border-color: blue;
   color: blue;
 }
+
+/* Testimonials */
+#testimonials {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 2% 5%;
+}
+
+#testimonials h1 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testi-left {
+  text-align: center;
+}
+
+.testi-left img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testi-left h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.testi-right p {
+  max-width: 700px;
+}
+
+/* Contact */
+#contact {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding: 2% 5%;
+}
+#contact h2 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 25px;
+}
+
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.container-contact p {
+  max-width: 550px;
+}
+
+.contact-right {
+  max-width: 450px;
+}
+
+.contact-right input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid blue;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-right textarea {
+  height: 100px;
+}
+
+.contact-right .message {
+  display: block;
+  text-align: center;
+  background-color: #4287f5;
+  border: none;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contact-right .message:hover {
+  background-color: black;
+}
+
 /* media-query */
 
 @media (max-width: 600px) {
@@ -187,5 +285,43 @@ nav {
 
   .skill-icons {
     flex-wrap: wrap;
+  }
+
+  /* Testimonials */
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testi-right p {
+    text-align: center;
+  }
+
+  .testi-left h2 {
+    padding-bottom: 20px;
+  }
+
+  .testi-left img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* Contact  */
+  .container-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-left h3 {
+    display: none;
+  }
+
+  .contact-right {
+    max-width: 550px;
+    width: 100%;
   }
 }
